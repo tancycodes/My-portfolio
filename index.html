@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   
+  <div class="nav-container">
+   <header>
+      <a href="index.html" class="logo">Tanuj Thakur</a>
+       <nav>
+        <ul>
+            <li><a href="#">My work</a></li>
+            <li><a href="#">My skills</a></li>
+            <li><a href="#">Hire me</a></li>
+        </ul>
+       </nav>
+    </header>
+   
+    <div class="social-header">
+         <ul>
+            <li><a href="https://www.linkedin.com/in/tanuj-thakur-6193691b7/"><img src="images/linked in (2).png" alt="linkedin"></a></li>
+            <li><a href="https://www.instagram.com/tancyyyyyyyy/"><img src="images/insta-logo (2).png" alt="insta"> </a></li>
+            <li><a href="https://wa.me/qr/74OMSAI6MJPJO1"><img src="images/whatsapp (2).png" alt="whatsapp"></a></li>
+         </ul>
+    </div>
+</div>  
+ <div class="hero">
+        <div class="content"> 
+          
+         <h1 class="stagger1 line1">Beautifully Crafted Web Experiences</h1>
+            <h6 class="stagger1 line2">"Be an activationist. Be someone who does things. Be a doer, not a don't-er"</h6>
+              <h6 class="stagger1 line3">
+              Tanuj Thakur is the kind of person who knows how to execute difficult tasks with precision. 
+              I like to explore alternative solutions to problems and have an open mind about what will work best. 
+              I'm really enjoying being a programmer currently. 
+              My curiosity about learning new technologies led me to become a programmer. 
+              I love to teach myself to remain compassionate, dedicated and determined everyday. 
+              I’m that person once I say I’ll do something, it will happen. 
+              Outside of the office, I'm passionate to write codes, Exploring virtual & online games/Apps, 
+              meeting new people and learning new things. 
+              If you'd like to know more about me, 
+              please reach out via email 
+              (tanujthakur273@gmail.com)
+            </h6>
+         <div class="meet stagger1">
+        <span>👇</span>
+        <p> Meet Tanuj Thakur</p>
+      </div>
+      
+      <button class="stagger1" id="toggle-button">Images</button>
+      <div class="image-container"> 
+      <img class="me1" src="images/me1.jpeg" id="image1">
+      <img class="me3" src="images/me3.jpeg" id="image2">
+      <img class="me2"src="images/me2.jpeg"  id="image3">
+    </div>
+      <script>
+        const toggleButton = document.getElementById("toggle-button");
+        const image1 = document.getElementById("image1");
+        const image2 = document.getElementById("image2");
+        const image3 = document.getElementById("image3");
+       toggleButton.addEventListener("click", () => {
+       if (image1.classList.contains("show")) {
+        image1.classList.remove("show");
+        image2.classList.remove("show");
+        image3.classList.remove("show");
+        toggleButton.textContent = "Images";
+      } else {
+       image1.classList.add("show");
+        image2.classList.add("show");
+        image3.classList.add("show");
+          toggleButton.textContent = "Close";
+      }
+    });
+       </script>
+</div>        
+     
+   <img src="images/Screenshot (33).png" class="hero-design" alt="background">
+ </div>
+  
+<section class="featured"> 
+       <div class="left">
+         <div class="transition2">
+               <p class="subtitle">Featured Project</p> 
+               <a href="https://tancycodes.github.io/landingpage/" class="featured-title"> Shoebrand.com web page</a>
+                 
+               <p class="featured-desc"> A landing page of a demo shoe brand which designed by me, with attractive aimation of landing down also have great UI features and easy to use.</p>
+            </div>
+        </div>
+        <img   class="right transition2" src="images/ss1.png" alt="Featured Project">   
+</section>
+
+<section class="skills">
+     <div class="skills-container transition2">
+        
+      <ul>
+        <li class="trasition2">
+           <div class="icon-container one transition2">
+                 <img src="images/Screenshot (23).png" class="html-icon transition2" alt="html-icon">
+            </div>
+            <p class="skill-title">Skilled at making proper Html structure</p>
+             <p class="featured-desc skill-desc">I have decent knowledge for building a proper Html structure with elements, tags different properties, attributes  and also neat and clean.</p>
+        </li>
+        <li class="trasition2">
+            <div class="icon-container two transition2">
+                  <img src="images/Screenshot (27).png" class="css-icon transition2" alt="css-icon">
+             </div>
+             <p class="skill-title">Skilled at making proper CSS structure</p>
+              <p class="featured-desc skill-desc">I really like how CSS works and how CSS helps for making websites more beautiful that's why I learned using CSS and I want to use different features of CSS into my projects to make them more attractive.</p>
+        </li> 
+        <li class="trasition2">
+            <div class="icon-container three transition2">
+                  <img src="images/Screenshot (28).png" class="java-icon transition2" alt="javascript-icon">
+             </div>
+             <p class="skill-title">Skilled at making proper java script structure</p>
+              <p class="featured-desc skill-desc">Java Script is a language which helps me to create many functions and features for my projects, I am good at using Script and also I can create good UI funtions for users.</p>
+        </li>
+      </ul>
+     </div>
+
+</section>
+
+<section class="portfolio">
+
+  <div class="portfolio-container transition3">
+      <div class="portfolio-left">
+           <div class="inner">
+                  <p class="subtitle">Food Website</p>
+                  <a href="https://tancycodes.github.io/Food/">     <p class="featured-title">yummy.eats</p> </a>
+                  <p class="featured-desc">A demo food website which I created with featers like finding the food search button and some information on that site below.</p>
+           </div>
+       </div>  
+       <a href="#"><img src="images/ss3.png" class="right" alt="foodwebsite-icon"></a>
+  </div>
+  
+  <div class="portfolio-container transition3">
+    <div class="portfolio-left">
+         <div class="inner">
+                <p class="subtitle">Educational Website</p>
+                <p class="featured-title">educare.com</p>
+                <p class="featured-desc" >A demo educational website for the user to interact and  have features like nav bar to search also have contact info page below.</p>
+         </div>
+     </div>  
+     <a href="#"><img src="images/ss2.png"  class="right" alt="foodwebsite-icon"></a>
+ </div>
+
+ <div class="portfolio-container transition3">
+  <div class="portfolio-left">
+       <div class="inner">
+              <p class="subtitle">Shoebrand website</p>
+             <a href="https://tancycodes.github.io/landingpage/"><p class="featured-title">shoebrand.com</p></a>
+              <p class="featured-desc">A landing page of a demo shoe brand which designed by me, with attractive aimation of landing down also have great UI features and easy to use.</p>
+       </div>
+   </div>  
+   <a href="#"><img src="images/ss1.png" class="right" alt="foodwebsite-icon"></a>
+ </div>
+
+</section>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+      gsap.registerPlugin(ScrollTrigger);
+      var tl = gsap.timeline();
+
+      tl.from('.content', {
+           y: '-30%',
+           opacity: 0,
+           duration: 2,
+           ease: Power4.easeOut
+      })
+      tl.from('.stagger1', {
+        opacity: 0,
+        y:-50,
+        stagger: .3,
+        ease: Power4.easeOut,
+        duration: 2
+      }, "-=1.5")
+      tl.from('.hero-design', {
+        opacity: 0, y: 50, ease: Power4.easeOut, duration: 1
+      }, "-=2") 
+
+      gsap.from(".transition2", {
+        scrollTrigger: {
+          trigger: '.transition2',
+          start: "top bottom"
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1.2,
+        stagger: .7
+      })
+      gsap.from(".transition3", {
+        scrollTrigger: {
+          trigger: '.transition3',
+          start: "top center"
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1.2,
+        stagger: .7
+      })
+</script> 
+
+</body>
+</html> 
+
+ 
